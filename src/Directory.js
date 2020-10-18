@@ -4,7 +4,7 @@ class Directory extends Component {
     render() {
         return (
             <div>
-                <h2>This is our Directory </h2>
+                <h2>This is our employee Directory </h2>
             </div>
         )
     }
