@@ -5,6 +5,7 @@ class Directory extends Component {
         return (
             <div>
                 <h2>This is our employee Directory </h2>
+                
             </div>
         )
     }
