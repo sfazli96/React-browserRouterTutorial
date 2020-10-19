@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
-import { getEmployeeById} from "./EmployeeAPI";
 
 
 // This file is our header file. The button we wrote will show a button on the website but won't do anything when we press the button, yet.
@@ -24,7 +23,6 @@ class Header extends Component {
                 <button onClick = {this.handleClickEmployeeDirectory}> 
                     Employee Directory
                 </button>
-                <h4>{getEmployeeById("1")[0].name}</h4>
             </div>
         );
     }

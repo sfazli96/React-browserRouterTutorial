@@ -4,6 +4,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Directory from "./Directory";
 import { Switch, Route } from "react-router-dom";
+import Profile from './Profile';
 
 
 // So whenever our path is equal to /Directory we want to display the component directory. Our top level of the Route path is the /Directory
@@ -16,7 +17,8 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/Directory" component={Directory} />
+          <Route exact path ="/Directory" component={Directory} />
+          <Route path="/Directory/:id" component={Profile} />
         </Switch>
       </div>
     );
